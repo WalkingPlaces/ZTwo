@@ -1,0 +1,164 @@
+{
+  "name": "Z Two",
+  "description": "",
+  "version": null,
+  "classes": [
+    {
+      "name": "Actor",
+      "path": "res://Sources/Scripts/Actors/actor.gd",
+      "extends_class": [
+        "KinematicBody2D",
+        "PhysicsBody2D",
+        "CollisionObject2D",
+        "Node2D",
+        "CanvasItem",
+        "Node",
+        "Object"
+      ],
+      "extends_file": "",
+      "icon": "",
+      "signature": "class Actor",
+      "description": "",
+      "sub_classes": [
+
+      ],
+      "constants": [
+
+      ],
+      "members": [
+        {
+          "name": "_speed",
+          "data_type": "float",
+          "default_value": 0,
+          "setter": "",
+          "getter": "",
+          "export": true,
+          "signature": "export var _speed: float = 0",
+          "description": ""
+        },
+        {
+          "name": "input_direction",
+          "data_type": "Vector2",
+          "default_value": null,
+          "setter": "",
+          "getter": "",
+          "export": false,
+          "signature": "var input_direction: Vector2",
+          "description": ""
+        },
+        {
+          "name": "true_direction",
+          "data_type": "Vector2",
+          "default_value": null,
+          "setter": "",
+          "getter": "",
+          "export": false,
+          "signature": "var true_direction: Vector2",
+          "description": ""
+        }
+      ],
+      "signals": [
+
+      ],
+      "methods": [
+        {
+          "name": "_ready",
+          "return_type": "null",
+          "rpc_mode": 0,
+          "signature": "func _ready() -> null",
+          "description": "",
+          "arguments": [
+
+          ]
+        },
+        {
+          "name": "_physics_process",
+          "return_type": "null",
+          "rpc_mode": 0,
+          "signature": "func _physics_process(delta: float) -> null",
+          "description": "",
+          "arguments": [
+            {
+              "name": "delta",
+              "type": "float"
+            }
+          ]
+        },
+        {
+          "name": "_get_input_direction",
+          "return_type": "Vector2",
+          "rpc_mode": 0,
+          "signature": "func _get_input_direction() -> Vector2",
+          "description": "",
+          "arguments": [
+
+          ]
+        }
+      ],
+      "static_functions": [
+
+      ],
+      "inherited_by": [
+        "Player"
+      ]
+    },
+    {
+      "name": "Player",
+      "path": "res://Sources/Scripts/Actors/player.gd",
+      "extends_class": [
+        "Actor",
+        "KinematicBody2D",
+        "PhysicsBody2D",
+        "CollisionObject2D",
+        "Node2D",
+        "CanvasItem",
+        "Node",
+        "Object"
+      ],
+      "extends_file": "",
+      "icon": "",
+      "signature": "class Player",
+      "description": "",
+      "sub_classes": [
+
+      ],
+      "constants": [
+
+      ],
+      "members": [
+
+      ],
+      "signals": [
+
+      ],
+      "methods": [
+        {
+          "name": "_ready",
+          "return_type": "null",
+          "rpc_mode": 0,
+          "signature": "func _ready() -> null",
+          "description": "",
+          "arguments": [
+
+          ]
+        },
+        {
+          "name": "_physics_process",
+          "return_type": "null",
+          "rpc_mode": 0,
+          "signature": "func _physics_process(delta: float) -> null",
+          "description": "",
+          "arguments": [
+            {
+              "name": "delta",
+              "type": "float"
+            }
+          ]
+        }
+      ],
+      "static_functions": [
+
+      ]
+    }
+  ]
+}
